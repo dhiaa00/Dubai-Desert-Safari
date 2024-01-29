@@ -28,3 +28,8 @@
 .search-box i {
   font-size: 30px;
 }
+
+.search-box input {
+  width: max-content;
+  padding: 5px 0;
+}
