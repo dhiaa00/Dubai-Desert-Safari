@@ -1,0 +1,30 @@
+.heroheader {
+  background-image: url(../../images/skyscrepper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 100px);
+  width: 100vw;
+}
+
+/* search box */
+
+.search-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.search-box .search-wrapper {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  padding: 10px 0;
+  background-color: white;
+  border-radius: 40px;
+}
+
+.search-box i {
+  font-size: 30px;
+}
