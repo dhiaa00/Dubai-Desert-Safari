@@ -1,0 +1,131 @@
+.tourlist {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+.tour {
+  width: min(35%, 300px);
+  height: 400px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s;
+  position: relative;
+}
+.tour:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transform: translate(0px, -2px);
+}
+.tour .info {
+  padding: 0 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.tour img {
+  width: 100%;
+  height: 150px;
+  z-index: 0;
+}
+.tour-img-label {
+  position: absolute;
+  z-index: 1;
+  top: 135px;
+  left: 5px;
+  background-color: rgb(0, 0, 57);
+  color: white;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 8px;
+}
+@media (max-width: 400px) {
+  .tour-img-label {
+    display: none;
+  }
+}
+.tour h3 {
+  margin-top: 15px;
+}
+.tour .stars {
+  display: inline-block;
+}
+.tour .rating {
+  font-size: 15px;
+}
+.tour .rating i {
+  margin-right: 5px;
+  color: orange;
+  font-size: 15px;
+}
+.tour .price {
+  color: red;
+  font-size: 18px;
+  font-weight: 600;
+}
+.tour .price span {
+  color: #999;
+  font-size: 16px;
+  font-weight: 500;
+}
+.tour .see-more-btn {
+  display: block;
+  background-color: blue;
+  margin-bottom: 10px;
+  padding: 8px 0;
+  width: 90%;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  transition: 0.5s;
+}
+.tour .see-more-btn:hover {
+  color: black;
+  background-color: rgb(206, 162, 247);
+}
+
+/* media queries */
+
+@media (max-width: 920px) {
+  .tour {
+    width: 35%;
+  }
+  .tour h3 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 724px) {
+  .tour {
+    width: 40%;
+    font-size: 15px;
+  }
+  .tour h3 {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  .tour .duration {
+    font-size: 13px;
+  }
+  .tour .price {
+    font-size: 16px;
+  }
+  .tour .price span {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 540px) {
+  .tour {
+    width: 60%;
+  }
+  .tour h3 {
+    margin-top: 12px;
+    font-size: 20px;
+  }
+  .tour .price {
+    font-size: 20px;
+  }
+}

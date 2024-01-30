@@ -41,6 +41,9 @@ header {
   display: flex;
   gap: 5px;
 }
+.navbar a:hover {
+  color: blueviolet;
+}
 .navButton {
   display: none;
 }

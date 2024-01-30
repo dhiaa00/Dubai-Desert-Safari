@@ -1,9 +1,9 @@
 .heroheader {
-  background-image: url(../../images/skyscrepper.jpg);
+  background-image: url(../../../tours/dubai7.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: calc(100vh - 100px);
-  width: 100vw;
+  width: 100%;
 }
 
 /* search box */
@@ -13,23 +13,80 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 10px;
+  padding: 40px 10px 0;
 }
 
 .search-box .search-wrapper {
   display: flex;
   align-items: center;
   width: 90%;
-  padding: 10px 0;
+  padding: 10px 10px;
   background-color: white;
   border-radius: 40px;
 }
 
 .search-box i {
   font-size: 30px;
+  margin-right: 5px;
 }
 
 .search-box input {
-  width: max-content;
-  padding: 5px 0;
+  width: 100%;
+  padding: 5px;
+  font-size: 20px;
+  border: none;
+}
+
+.search-box button {
+  background-color: blue;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border: transparent;
+  border-radius: 20px;
+  padding: 10px 15px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.search-box button:hover {
+  color: black;
+  background-color: rgb(206, 162, 247);
+}
+/* media queries */
+@media (max-width: 450px) {
+  .search-box input {
+    font-size: 15px;
+  }
+  .search-box button {
+    padding: 5px 10px;
+    font-size: 15px;
+  }
+  .search-box i {
+    font-size: 25px;
+  }
+}
+
+/* hero header text */
+
+.heroheader-text {
+  width: 100%;
+  height: calc(100% - 110px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.heroheader h1 {
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  font-size: 50px;
+  font-weight: 800;
+  color: white;
+}
+
+.heroheader h1 span {
+  font-size: 40px;
+  font-weight: 700;
 }

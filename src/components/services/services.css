@@ -1,0 +1,53 @@
+.services {
+  padding: 40px 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.services .bi {
+  margin-right: 5px;
+}
+
+.bi-image {
+  color: gray;
+}
+
+.bi-people-fill {
+  color: rgb(91, 9, 167);
+}
+
+.bi-buildings {
+  color: orange;
+}
+
+.bi-globe {
+  color: gray;
+}
+
+.service {
+  font-size: 20px;
+  border: 1px solid gray;
+  padding: 17px 27px;
+  border-radius: 20px;
+}
+
+@media (max-width: 920px) {
+  .service {
+    font-size: 17px;
+    padding: 12px 22px;
+  }
+}
+@media (max-width: 720px) {
+  .services {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .service {
+    font-size: 20px;
+    padding: 20px 35px;
+    width: max(40%, 230px);
+    display: flex;
+    justify-content: center;
+  }
+}
