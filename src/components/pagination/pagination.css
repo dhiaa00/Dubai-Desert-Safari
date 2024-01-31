@@ -1,0 +1,20 @@
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0 0 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.pagination i:not(.final) {
+  color: rgb(11, 146, 229);
+}
+i:not(.final):hover {
+  color: blueviolet;
+  cursor: pointer;
+}
+.final {
+  color: #999999;
+}
