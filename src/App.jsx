@@ -6,15 +6,12 @@ import TourList from "./components/tourlist/TourList";
 import { toursList } from "./data";
 import Pagination from "./components/pagination/pagination";
 import Sort from "./components/sort/sort";
+import { paginate } from "./utils/pagination";
+import Banner from "./components/banner/Banner";
 
 function App() {
   const [currentPage, setCurrentPage] = useState(1);
   const [sortMethod, setSortMethod] = useState("recommanded");
-  const TOURS_BY_PAGE = 6;
-  const pagesNumber = Math.ceil(toursList.length / TOURS_BY_PAGE);
-  const startingIndex = TOURS_BY_PAGE * (currentPage - 1);
-  const endingIndex = TOURS_BY_PAGE * currentPage;
-
   // sort
 
   const sortedList =
@@ -29,8 +26,11 @@ function App() {
       : toursList.sort((ob1, ob2) => {
           return ob2.priceFrom - ob1.priceFrom;
         });
-
-  const currentTours = sortedList.slice(startingIndex, endingIndex);
+  const { pagesNumber, currentTours } = paginate(
+    toursList.length,
+    currentPage,
+    sortedList
+  );
   return (
     <>
       <Header />
@@ -43,6 +43,7 @@ function App() {
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}
       />
+      <Banner />
     </>
   );
 }

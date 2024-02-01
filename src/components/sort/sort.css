@@ -18,3 +18,13 @@
 .sort select:focus {
   outline: none;
 }
+@media (max-width: 480px) {
+  .sort {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+  .sort select {
+    padding: 10px 5px;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,48 @@
+.banner {
+  width: 100%;
+  height: 300px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.banner h2 {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  width: calc(100% - 80px);
+  border-radius: 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: white;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+.banner img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+@media (max-width: 920px) {
+  .banner h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 720px) {
+  .banner h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 520px) {
+  .banner h2 {
+    font-size: 20px;
+  }
+  .banner,
+  .banner img {
+    height: 200px;
+  }
+}
