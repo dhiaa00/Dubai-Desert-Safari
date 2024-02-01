@@ -1,9 +1,9 @@
 .tourlist {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
   flex-wrap: wrap;
-  padding: 40px 20px;
+  padding: 10px 20px;
 }
 .tour {
   width: min(35%, 300px);

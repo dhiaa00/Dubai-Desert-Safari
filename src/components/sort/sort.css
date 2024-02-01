@@ -1,0 +1,20 @@
+.sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  font-size: 18px;
+}
+.sort .tours-number span {
+  color: var(--orange-color);
+  font-weight: 600;
+}
+.sort select {
+  padding: 10px 15px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+.sort select:focus {
+  outline: none;
+}
