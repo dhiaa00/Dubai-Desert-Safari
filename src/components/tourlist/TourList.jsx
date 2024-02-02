@@ -5,7 +5,7 @@ const TourList = ({ toursList }) => {
   return (
     <div className="tourlist">
       {toursList.map((e) => {
-        return <Tour details={e} />;
+        return <Tour details={e} key={e.id} />;
       })}
     </div>
   );

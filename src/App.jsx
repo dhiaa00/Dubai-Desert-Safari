@@ -1,50 +1,38 @@
-import { useState } from "react";
 import Header from "./components/header/header";
-import HeroHeader from "./components/heroHeader/HeroHeader";
-import Services from "./components/services/Services";
-import TourList from "./components/tourlist/TourList";
-import { toursList } from "./data";
-import Pagination from "./components/pagination/pagination";
-import Sort from "./components/sort/sort";
-import { paginate } from "./utils/pagination";
-import Banner from "./components/banner/Banner";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { languages, currencies } from "./data";
+import Footer from "./components/footer/Footer";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Login from "./pages/forms/Login";
+import Register from "./pages/forms/Register";
+import SingleTour from "./pages/tour/SingleTour";
+import { useEffect } from "react";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState(1);
-  const [sortMethod, setSortMethod] = useState("recommanded");
-  // sort
+  // scroll to top when changing route
+  const ScrollToTop = () => {
+    const { pathname } = useLocation();
 
-  const sortedList =
-    sortMethod === "recommanded"
-      ? toursList.sort((ob1, ob2) => {
-          return ob2.rating - ob1.rating;
-        })
-      : sortMethod === "low"
-      ? toursList.sort((ob1, ob2) => {
-          return ob1.priceFrom - ob2.priceFrom;
-        })
-      : toursList.sort((ob1, ob2) => {
-          return ob2.priceFrom - ob1.priceFrom;
-        });
-  const { pagesNumber, currentTours } = paginate(
-    toursList.length,
-    currentPage,
-    sortedList
-  );
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+
+    return null;
+  };
   return (
-    <>
+    <BrowserRouter>
       <Header />
-      <HeroHeader />
-      <Services />
-      <Sort toursNumber={toursList.length} setSortMethod={setSortMethod} />
-      <TourList toursList={currentTours} />
-      <Pagination
-        pagesNumber={pagesNumber}
-        currentPage={currentPage}
-        setCurrentPage={setCurrentPage}
-      />
-      <Banner />
-    </>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/tour/:id" element={<SingleTour />} />
+      </Routes>
+      <Footer languages={languages} currencies={currencies} />
+    </BrowserRouter>
   );
 }
 

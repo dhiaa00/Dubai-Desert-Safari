@@ -1,0 +1,34 @@
+.single-tour {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+}
+.tour-step {
+  display: flex;
+  gap: 5px;
+  color: #999;
+  margin-bottom: 20px;
+}
+.single-tour .tour-img-label {
+  position: unset;
+  padding: 15px;
+  font-size: 30px;
+}
+.single-tour img {
+  width: 90%;
+  align-self: center;
+}
+.details {
+  display: flex;
+  gap: 20px;
+}
+.provider {
+  color: blue;
+  font-weight: 600;
+}
+.provider span {
+  font-size: 18px;
+  color: black;
+}

@@ -1,8 +1,9 @@
 import Rating from "./Rating";
+import { Link } from "react-router-dom";
 
 const Tour = ({ details }) => {
   return (
-    <div className="tour" key={details.id}>
+    <div className="tour">
       <img src={details.image} alt="tour photo" />
       <div className="tour-img-label">ADVENTURE</div>
       <div className="info">
@@ -17,9 +18,9 @@ const Tour = ({ details }) => {
           From ${details.priceFrom} <span>per person</span>
         </div>
       </div>
-      <a className="see-more-btn" href="http://">
+      <Link className="see-more-btn" to={`/tour/${details.id}`}>
         See More
-      </a>
+      </Link>
     </div>
   );
 };

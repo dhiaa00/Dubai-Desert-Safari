@@ -77,7 +77,7 @@ header {
     align-items: flex-start;
     gap: 10px;
   }
-  .navbar ul li {
+  .navbar ul .navbar-link {
     display: flex;
     justify-content: flex-start;
     align-items: center;

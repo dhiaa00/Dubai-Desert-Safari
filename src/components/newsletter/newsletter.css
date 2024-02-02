@@ -1,0 +1,70 @@
+.newsletter {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.newsletter-wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+.newsletter-wrapper img {
+  width: 50%;
+  height: 400px;
+}
+.newsletter-wrapper .side-call {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  gap: 15px;
+  padding: 10px;
+  background-color: #d1f6e2;
+}
+.newsletter-wrapper .side-call h2 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+}
+.newsletter-wrapper .side-call p {
+  text-align: center;
+}
+.newsletter-wrapper .side-call form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.newsletter-wrapper .side-call form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+.newsletter-wrapper .side-call form button {
+  background-color: blue;
+  color: white;
+  border: none;
+  width: 40%;
+  height: 35px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.newsletter-wrapper .side-call form button:hover {
+  color: black;
+  background-color: rgb(206, 162, 247);
+}
+
+@media (max-width: 480px) {
+  .newsletter-wrapper img {
+    display: none;
+  }
+  .newsletter-wrapper .side-call {
+    width: 100%;
+    padding: 20px;
+  }
+}

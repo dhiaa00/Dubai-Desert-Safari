@@ -8,7 +8,7 @@
 }
 .banner h2 {
   position: absolute;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   width: calc(100% - 80px);
   border-radius: 10px;
   height: 100%;

@@ -56,13 +56,13 @@
 .tour h3 {
   margin-top: 15px;
 }
-.tour .stars {
+.stars {
   display: inline-block;
 }
-.tour .rating {
+.rating {
   font-size: 15px;
 }
-.tour .rating i {
+.rating i {
   margin-right: 5px;
   color: orange;
   font-size: 15px;
