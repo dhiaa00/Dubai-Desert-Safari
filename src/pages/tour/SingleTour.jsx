@@ -26,7 +26,24 @@ const SingleTour = () => {
           <span>Activity Provider: </span>Dhia eddine
         </div>
       </div>
-      <img src={currentTour.image} alt="tour image" />
+      <div className="tour-info">
+        <img src={currentTour.image} alt="tour image" />
+        <div className="info">
+          <div className="save-up">save up to 35%</div>
+          <p>booked 42 times yesterday</p>
+          <div className="book-now">
+            <div className="price">
+              {currentTour.priceFrom}$ <span>per person</span>
+            </div>
+            <button>Book Now</button>
+          </div>
+
+          <div className="more-details">
+            <i class="bi bi-calendar-check"></i> Reserve now and pay laterto
+            your spot and pay nothing today
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
