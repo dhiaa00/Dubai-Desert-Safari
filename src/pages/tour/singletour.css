@@ -105,4 +105,53 @@
   .tour-info img {
     width: 80%;
   }
+  .tour-info .info {
+    width: 80%;
+  }
 }
+.about-activity {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.activity-description {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.about-activity h2 {
+  font-size: 30px;
+  font-weight: 800;
+}
+.about-activity ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 10px;
+}
+.about-activity ul li h3 {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+}
+.about-activity ul li h3 i {
+  padding: 2px 5px 0;
+}
+.bi-calendar3 {
+  color: gray;
+}
+.bi-cash-coin {
+  margin-top: 2px;
+  color: rgb(0, 193, 0);
+}
+.bi-virus2 {
+  color: rgb(177, 0, 0);
+}
+.bi-person-check {
+  color: rgb(84, 84, 255);
+}
+.about-activity ul li p {
+  color: #666;
+  padding: 2px 0 0 10px;
+}
+@media (max-width: 480px);

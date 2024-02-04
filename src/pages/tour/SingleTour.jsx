@@ -44,6 +44,53 @@ const SingleTour = () => {
           </div>
         </div>
       </div>
+      <div className="about-activity">
+        <p className="activity-description">
+          Discover a different side of Dubai as a fun-filled safari across the
+          desert. Try sandboarding, dune bashing and camel riding, with the
+          option to add an electifying quad bike ride or immersive Al Khayma
+          Camp dinner experience to your adventure.
+        </p>
+        <h2>About this Activity</h2>
+        <ul>
+          <li>
+            <h3>
+              <i className="bi bi-calendar3"></i>Free Cancellation
+            </h3>
+            <p>Cancel up to 24 hours in advance to receive a full refund</p>
+          </li>
+          <li>
+            <h3>
+              <i className="bi bi-cash-coin"></i>Reserve now & pay later
+            </h3>
+            <p>
+              Keep your travel plan flexible --book your spot and pay nothing
+              today
+            </p>
+          </li>
+          <li>
+            <h3>
+              <i className="bi bi-virus2"></i>Covid-19 precautions
+            </h3>
+            <p>
+              Special health and safety measures are in place. Check your
+              activity voucher once you book for full details.
+            </p>
+          </li>
+          <li>
+            <h3>
+              <i className="bi bi-clock-history"></i>Duration 4-7 hours
+            </h3>
+            <p>Check availability to see starting time</p>
+          </li>
+          <li>
+            <h3>
+              <i className="bi bi-person-check"></i>Live tour guide
+            </h3>
+            <p>the trip will be guided in English</p>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
