@@ -152,6 +152,14 @@
 }
 .about-activity ul li p {
   color: #666;
-  padding: 2px 0 0 10px;
+  padding: 2px 0 0 3%;
 }
-@media (max-width: 480px);
+@media (max-width: 480px) {
+  .activity-description {
+    text-align: center;
+  }
+  .about-activity h2 {
+    font-size: 25px;
+    margin: 10px 0;
+  }
+}

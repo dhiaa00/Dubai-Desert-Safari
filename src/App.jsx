@@ -7,22 +7,23 @@ import About from "./pages/About/About";
 import Login from "./pages/forms/Login";
 import Register from "./pages/forms/Register";
 import SingleTour from "./pages/tour/SingleTour";
-import { useEffect } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 function App() {
+  const [toggle, setToggle] = useState(false);
   // scroll to top when changing route
   const ScrollToTop = () => {
     const { pathname } = useLocation();
-
     useEffect(() => {
       window.scrollTo(0, 0);
     }, [pathname]);
 
     return null;
   };
+
   return (
     <BrowserRouter>
-      <Header />
+      <Header toggle={toggle} setToggle={setToggle} />
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />

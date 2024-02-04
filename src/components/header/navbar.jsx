@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggle, setToggle }) => {
+  const handleClick = () => {
+    setToggle(false);
+  };
+
   return (
     <nav
       className="navbar"
@@ -8,19 +12,19 @@ const Navbar = ({ toggle }) => {
         clipPath: toggle && "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
       }}>
       <ul className="navbar-links">
-        <Link to="/" className="navbar-link">
+        <Link to="/" className="navbar-link" onClick={handleClick}>
           <i className="bi bi-house-door-fill"></i>
           <span>Home</span>
         </Link>
-        <Link to="/about" className="navbar-link">
+        <Link to="/about" className="navbar-link" onClick={handleClick}>
           <i className="bi bi-question-circle-fill"></i>
           <span>About</span>
         </Link>
-        <Link to="/login" className="navbar-link">
+        <Link to="/login" className="navbar-link" onClick={handleClick}>
           <i className="bi bi-arrow-right-square-fill"></i>
           <span>Login</span>
         </Link>
-        <Link to="/register" className="navbar-link">
+        <Link to="/register" className="navbar-link" onClick={handleClick}>
           <i className="bi bi-person-fill-add" style={{ fontSize: 20 }}></i>
           <span>Register</span>
         </Link>
