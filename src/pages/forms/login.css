@@ -39,6 +39,16 @@
   width: 80%;
   padding: 10px;
 }
+.login-button {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
 @media (max-width: 720px) {
   .info-input {
     width: 250px;
