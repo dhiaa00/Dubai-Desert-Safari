@@ -19,7 +19,7 @@ Use code with caution. Learn more
 This will clone the project's code and install all the necessary dependencies.
 ```
 
-**2. Start the Development Server:
+**2. Start the Development Server:**
 
 Run the following command to launch the development server:
 
