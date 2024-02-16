@@ -12,8 +12,8 @@ This project utilizes Vite for a blazing-fast development experience and efficie
 Open your terminal and execute the following command, replacing `[your-username]` with your actual GitHub username:
 
 ```bash
-git clone [https://github.com/](https://github.com/)[your-username]/[your-project-name].git
-cd [your-project-name]
+git clone https://github.com/dhiaa00/Dubai-Desert-Safari.git
+cd Dubai-Desert-Safari
 npm install
 Use code with caution. Learn more
 This will clone the project's code and install all the necessary dependencies.
