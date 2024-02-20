@@ -1,4 +1,14 @@
-# Dubai Desert Safari
+# Dubai desert safari web app built with React! ️
+
+This app makes it easy to plan your dream desert adventure, with features like:
+### Price and rating filtering: 
+Find the perfect tour that fits your budget and preferences.
+### Pagination between tours:
+Browse through a variety of options without feeling overwhelmed.
+### Responsive and friendly design:
+Enjoy a seamless experience on any device.
+
+Check it out and let me know what you think!
 
 ##  Ready to Explore? Here's How to Run This Project:
 
