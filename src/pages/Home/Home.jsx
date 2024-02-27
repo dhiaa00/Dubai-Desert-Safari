@@ -3,7 +3,7 @@ import HeroHeader from "../../components/heroHeader/HeroHeader";
 import Services from "../../components/services/Services";
 import TourList from "../../components/tourlist/TourList";
 import Pagination from "../../components/pagination/Pagination";
-import Sort from "../../components/sort/sort";
+import Sort from "../../components/sort/Sort";
 import { paginate } from "../../utils/pagination";
 import Banner from "../../components/banner/Banner";
 import NewsLetter from "../../components/newsletter/NewsLetter";
