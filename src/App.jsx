@@ -1,4 +1,4 @@
-import Header from "./components/header/header";
+import Header from "./components/header/Header";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { languages, currencies } from "./data";
 import Footer from "./components/footer/Footer";
@@ -7,7 +7,7 @@ import About from "./pages/About/About";
 import Login from "./pages/forms/Login";
 import Register from "./pages/forms/Register";
 import SingleTour from "./pages/tour/SingleTour";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   const [toggle, setToggle] = useState(false);
